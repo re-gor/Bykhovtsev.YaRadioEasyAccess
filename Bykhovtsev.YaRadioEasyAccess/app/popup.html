@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <title>Yandex Radio Easy Access</title>
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+      .controls div{
+          float:left;
+          margin-right:10px
+      }
+      .controls div:last-child{
+          float:none;
+          margin-right:0;
+      }
+      .btn {
+          height:50px;
+          width:50px;
+          padding: 2px 5px;
+          line-height:30px;
+          margin-right: -4px;
+          border-width: 0;
+          font-size:20px;
+      }
+      .rates{
+      }
+    </style>
+
+    <script src="popup.js"></script>
+  </head>
+  <body>
+      <a class="song-title" href="">
+          <h2></h2>
+      </a>
+      <a class="song-artist" href="">
+          <h3></h3>
+      </a>
+      <div class="container">
+          <div class="controls">
+              <div class="rates">
+                  <button class="btn" title="Dislike" id="dislike">&#128078;</button>
+                  <button class="btn" title="Like" id="like">&#128077;</button>
+              </div>
+              <div class="music-controllers">
+                    <button class="btn" title="Mute" id="mute">&#128263;</button>
+                    <button class="btn" title="Play/Pause" id="play">&#9654;&#8214;</button>
+                    <button class="btn" title="Next" id="next">&#9654;&#9654;&#8214;</button>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>
+

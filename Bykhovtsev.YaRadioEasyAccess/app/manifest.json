@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Yandex radio easy access",
+  "description": "This extension is used for access yandex radio buttons from any tab",
+  "version": "1.0",
+
+  "permissions": [
+    "notifications",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "popup.html"
+  },
+   "content_scripts": [
+    {
+      "matches": ["https://radio.yandex.ru/*"],
+      "js": ["jquery-2.1.4.min.js", "dispatcher.js"]
+    }
+  ],
+  "background": {
+    "scripts": [ "background.js" ],
+    "persistent": false
+  } 
+}
